@@ -37,6 +37,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Скидання стилів кінець */
 
@@ -186,34 +188,50 @@ body {
 
 /****** section hero start ******/
 
-.hero-wrap {
-}
-
 .hero {
-  padding: 188px 0;
+  /* padding: 188px 0; */
+  padding: 72px 0;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/herobackground.jpg);
+    url(../images/herobackgroundmob.jpg);
   background-size: cover;
   max-width: 1440px;
+  /* min-height: 432px; */
   background-position: center;
   background-repeat: no-repeat;
   background-color: #2e2f42;
   margin: 0 auto;
 }
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobackgroundmob-2x.jpg);
+  }
+}
 .hero-title {
-  font-size: 56px;
-  line-height: 1.07;
+  /* font-size: 56px;
+  line-height: 1.07; */
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
-  min-height: 168px;
-  margin-bottom: 48px;
+  /* max-width: 496px;
+  min-height: 168px; */
+  max-width: 216px;
+  min-height: 160px;
+  /* margin-bottom: 48px; */
   margin: 0 auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 72px;
 }
 .hero-button {
   font-family: "Roboto", sans-serif;
@@ -390,15 +408,17 @@ body {
 /****** section Portfolio start ******/
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .portfolio-row {
   display: flex;
-  column-gap: 24px;
-  row-gap: 48px;
   flex-wrap: wrap;
+  /* column-gap: 24px; */
+  row-gap: 48px;
 }
 
 .portfolio-list {
@@ -794,32 +814,81 @@ body {
 }
 
 /***! Медіазапити ****/
-@media screen and (max-width: 1158px) {
+@media screen and (max-width: 1157px) {
   .characteristics-icon-box {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
+  .hero {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobackgroundtab.jpg);
   }
-  .characteristics-container {
-    gap: 72px 24px;
-  }
-  .characteristics-title {
-    text-align: left;
-  }
-  .characteristics-item {
-    width: calc((100% - 24px) / 2);
-  }
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/herobackgroundtab-2x.jpg);
+    }
+    .hero-title {
+      font-size: 56px;
+      line-height: 1.07;
+      margin-bottom: 36px;
+      max-width: 496px;
+      min-height: 120px;
+    }
 
-  .team-card-list {
-    gap: 64px 24px;
+    .container {
+      width: 768px;
+    }
+    .characteristics-container {
+      gap: 72px 24px;
+    }
+    .characteristics-title {
+      text-align: left;
+    }
+    .characteristics-item {
+      width: calc((100% - 24px) / 2);
+    }
+
+    .team-card-list {
+      gap: 64px 24px;
+    }
   }
 }
+@media screen and (min-width: 1157px) {
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobackground.jpg);
+  }
 
-@media screen and (min-width: 1158px) {
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/herobackground-2x.jpg);
+    }
+  }
+  .hero-title {
+    margin-bottom: 48px;
+  }
   .container {
     width: 1158px;
     padding: 0 15px;
