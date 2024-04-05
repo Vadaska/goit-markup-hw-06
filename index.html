@@ -34,20 +34,22 @@
             <li><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <address class="address">
-          <ul class="menu-adress">
-            <li>
-              <a class="address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="address-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="address-tab">
+          <address class="address">
+            <ul class="menu-adress">
+              <li>
+                <a class="address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
         <!-- Burger-Menu -->
         <button class="btn-menu-mob" type="button">
           <svg class="header-menu-icon-mob" width="24" height="24">
@@ -55,7 +57,7 @@
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
+      <div class="mob-menu is-open">
         <div>
           <button class="close-btn-menu-mob" type="button">
             <svg width="8" height="8">
@@ -638,10 +640,10 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer-down">
+    <footer class="footer-down">
       <div class="container footer-flex">
         <div class="footer-web">
-          <a class="logo" href="./index.html"
+          <a class="logo logo-footer" href="./index.html"
             >Web<span class="logo-part-footer">Studio</span>
           </a>
           <p class="footer-text">
@@ -695,15 +697,18 @@
               />
             </label>
             <button type="submit" class="subscribe-btn">
-              Subscribe
-              <svg width="24" height="24" class="footer-subscribe-icon">
+              Subscribe<svg
+                width="24"
+                height="24"
+                class="footer-subscribe-icon"
+              >
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="modal-overlay is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
